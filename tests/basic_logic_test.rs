@@ -1,7 +1,6 @@
 extern crate nand2tetris;
 
 use nand2tetris::circuit::basic_logic as base;
-use nand2tetris::circuit::combinational_logic as comb;
 
 #[test]
 fn nand_test() {
