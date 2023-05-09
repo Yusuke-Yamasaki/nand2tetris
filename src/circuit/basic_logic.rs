@@ -17,11 +17,3 @@ pub fn or(a: bool, b: bool) -> bool {
 pub fn xor(a: bool, b: bool) -> bool {
     nand(nand(not(a), b), nand(a, not(b)))
 }
-
-pub fn mux(a: bool, b: bool, sel: bool) -> bool {
-    or(and(a, not(sel)), and(b, sel))
-}
-
-pub fn dmux(input: bool, sel: bool) -> (bool, bool) {
-    (and(input, not(sel)), and(input, sel))
-}
