@@ -79,4 +79,3 @@ pub fn dmux8way(input: bool, sel: [bool; 3]) -> [bool; 8] {
         and(input, and(sel[0], and(sel[1], sel[2]))),
     ]
 }
-
