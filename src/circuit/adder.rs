@@ -37,3 +37,13 @@ pub fn add16(a: Word, b: Word) -> Word {
         c12[0], c13[0], c14[0], c15[0],
     ]
 }
+
+pub fn inc16(a: Word) -> Word {
+    add16(
+        a,
+        [
+            true, false, false, false, false, false, false, false, false, false, false, false,
+            false, false, false, false,
+        ],
+    )
+}
