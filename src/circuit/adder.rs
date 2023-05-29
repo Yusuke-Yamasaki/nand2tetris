@@ -1,6 +1,6 @@
 use super::basic_logic::and;
-use super::basic_logic::xor;
 use super::basic_logic::or;
+use super::basic_logic::xor;
 use super::basic_logic::Word;
 
 pub fn half_adder(a: bool, b: bool) -> [bool; 2] {
