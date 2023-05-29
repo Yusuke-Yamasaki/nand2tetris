@@ -41,3 +41,10 @@ fn add16_test() {
     assert_eq!(int2word(5), add::add16(int2word(0), int2word(5)));
     assert_eq!(int2word(0), add::add16(int2word(-5), int2word(5)));
 }
+
+#[test]
+fn inc16_test() {
+    assert_eq!(int2word(25), add::inc16(int2word(24)));
+    assert_eq!(int2word(0), add::inc16(int2word(-1)));
+    assert_eq!(int2word(-20), add::inc16(int2word(-21)));
+}
